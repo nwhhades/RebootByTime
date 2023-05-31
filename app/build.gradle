@@ -1,0 +1,44 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.whiner.rebootbytime'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.whiner.rebootbytime"
+        minSdk 19
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation "com.github.nwhhades:Goblin:2.6"
+
+    implementation "androidx.work:work-runtime:2.8.1"
+
+}

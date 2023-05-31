@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Theme.RebootByTime" parent="BaseAppTheme">
+    </style>
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">#FFF</item>
+        <item name="android:textColorSecondary">#ABC</item>
+    </style>
+</resources>

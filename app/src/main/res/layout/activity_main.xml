@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <NumberPicker
+        android:id="@+id/day"
+        style="@style/TimePickerTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="600pt"
+        android:layout_marginStart="400pt"
+        android:layout_marginTop="300pt"
+        android:theme="@style/TimePickerTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50pt"
+        android:text="@string/day"
+        android:textColor="@color/white"
+        android:textSize="100pt"
+        app:layout_constraintBottom_toBottomOf="@id/day"
+        app:layout_constraintEnd_toStartOf="@id/day"
+        app:layout_constraintTop_toTopOf="@id/day" />
+
+    <TimePicker
+        android:id="@+id/time"
+        style="@style/TimePickerTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="600pt"
+        android:layout_marginStart="400pt"
+        android:theme="@style/TimePickerTheme"
+        android:timePickerMode="spinner"
+        app:layout_constraintStart_toEndOf="@+id/day"
+        app:layout_constraintTop_toTopOf="@+id/day"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50pt"
+        android:text="@string/time"
+        android:textColor="@color/white"
+        android:textSize="100pt"
+        app:layout_constraintBottom_toBottomOf="@id/time"
+        app:layout_constraintEnd_toStartOf="@id/time"
+        app:layout_constraintTop_toTopOf="@id/time" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100pt"
+        android:text="@string/msg"
+        android:textColor="@color/white"
+        android:textSize="120pt"
+        app:layout_constraintStart_toStartOf="@id/day"
+        app:layout_constraintTop_toBottomOf="@id/day" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/btn1"
+        style="@style/TvButton"
+        android:layout_width="600pt"
+        android:layout_height="200pt"
+        android:layout_marginStart="1000pt"
+        android:layout_marginBottom="400pt"
+        android:focusableInTouchMode="false"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="100pt"
+        android:theme="@style/TvButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/btn2"
+        style="@style/TvButton"
+        android:layout_width="600pt"
+        android:layout_height="200pt"
+        android:layout_marginEnd="1000pt"
+        android:layout_marginBottom="400pt"
+        android:focusableInTouchMode="false"
+        android:text="@string/clear"
+        android:textColor="@color/white"
+        android:textSize="100pt"
+        android:theme="@style/TvButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RebootByTime</string>
+    <string name="day">星期</string>
+    <string name="time">时间</string>
+    <string name="save">保存</string>
+    <string name="clear">清空</string>
+    <string name="msg">定时日期：%s</string>
+</resources>
